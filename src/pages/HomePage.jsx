@@ -1,20 +1,36 @@
 //if you have jsx in the file extension you don't need import react at the top
+import { useState, useEffect } from "react";
 
 // Components
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 
-// Data
-import { allProjects } from "../data";
-
 function HomePage() {
-  return (
+  //State
+  const [projectList, setProjectList] = useState([]);
+  
+  // have to be really careful what you put in the array can cause a loop of death
+  useEffect(() => {   //always runs the first time after the UI is rendered
+    fetch(`${import.meta.env.VITE_API_URL}projects`)
+    .then((results) => {
+    return results.json();
+    })
+    .then((data) => {
+    setProjectList(data);
+    });
+}, []);
+
+    return (
+    <div>
+    <h1>Gnome My Enemy</h1>
     <div id="project-list">
-      {allProjects.map((project, key) => {
+      {projectList.map((project, key) => {
         return <ProjectCard key={key} projectData={project} />;
       })}
     </div>
+    </div>
   );
 }
+
 
 export default HomePage;
 
