@@ -22,14 +22,20 @@ function ProjectPage() {
 return (
     <div>
       <h2>{projectData.title}</h2>
-      <h3>Created at: {projectData.date_created}</h3>
-      <h3>{`Status: ${projectData.is_open}`}</h3>
+      <h3>Project created on: {projectData.date_created}</h3>
+      <h3>{`Total gnomes pledged: ${projectData.total}`}</h3>
+      <h3>{`Open to new pledges: ${projectData.is_open}`}</h3>
+      <h3>Project Description</h3>
+      <p>{projectData.description}</p>
+      <div>
+        <img src={projectData.image} />
+      </div>
       <h3>Pledges:</h3>
       <ul>
         {projectData.pledges.map((pledgeData, key) => {
           return (
             <li>
-              {pledgeData.amount} from {pledgeData.supporter_public}
+              {pledgeData.amount} gnomes donated from {pledgeData.supporter_public} - "{pledgeData.comment}"
             </li>
           );
         })}

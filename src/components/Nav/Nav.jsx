@@ -4,7 +4,8 @@ function Nav() {
     return (
     <nav>
         <Link to="/">Home</Link>
-        </nav>
+    </nav>
+
     );
 }
 export default Nav;
