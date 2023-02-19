@@ -23,13 +23,21 @@ function ProjectPage() {
     }, []);
 
     const formattedDate = projectData.date_created
-    ? format(new Date(projectData.date_created), "do MMMM y - GGGG G")
+    ? format(new Date(projectData.date_created), "do MMMM y")
+    : "";
+
+    const formattedDateEra = projectData.date_created
+    ? format(new Date(projectData.date_created), "GGGG")
+    : "";
+
+    const formattedDateGnomeEra = formattedDateEra.indexOf("Anno Domini") > -1 ? "Anno Gnome (AG)"
+    : formattedDateEra.indexOf("Before Christ") > -1 ? "Before Gnome (BG)"
     : "";
 
     return (
         <div>
         <h2>{projectData.title}</h2>
-        <h3>Project created on: {formattedDate}</h3>
+        <h3>Project created on: {formattedDate} - {formattedDateGnomeEra}</h3>
 
         <h3>{`Total gnomes pledged: ${projectData.total}`}</h3>
         <h3>{`Open to new pledges: ${projectData.is_open}`}</h3>
