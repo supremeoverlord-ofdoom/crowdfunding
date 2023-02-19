@@ -22,10 +22,12 @@ function ProjectPage() {
         });
     }, []);
 
+    //formatting the dates
     const formattedDate = projectData.date_created
     ? format(new Date(projectData.date_created), "do MMMM y")
     : "";
 
+    // this is the dumb but I love it - changing era to gnome version
     const formattedDateEra = projectData.date_created
     ? format(new Date(projectData.date_created), "GGGG")
     : "";
