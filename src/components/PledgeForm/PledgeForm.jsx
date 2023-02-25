@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate, useParams, useOutletContext } from "react-router-dom";
 
-function PledgeForm() {
+function PledgeForm(props) {
+
+    const {project} = props
+console.log(project)
+
     const authToken = window.localStorage.getItem("token")
     const [loggedIn] = useOutletContext();
     const [pledges, setPledges] = useState({
@@ -10,8 +14,7 @@ function PledgeForm() {
         "amount": null,
         "comment": "",
         "anonymous": false,
-        "project": null,
-        "supporter_private": ""        
+        "supporter_private": null,       
     });
 
     // enables redirect
@@ -52,7 +55,7 @@ function PledgeForm() {
                     "Content-Type": "application/json",
                     "Authorization": `Token ${authToken}`,
                 },
-                body: JSON.stringify(pledges),
+                body: JSON.stringify({...pledges, project: project.id}), //put in same thing for usupporter_id in here
                 }
                 );
                 if (!response.ok) {
@@ -98,15 +101,6 @@ function PledgeForm() {
                     type="checkbox"
                     id="anonymous" 
                     onChange={handleChange} 
-                />
-                </div>
-                <div>
-                <label htmlFor="project">Project:</label>
-                <input
-                    type="text"
-                    id="project"
-                    placeholder="needs to be auto-filled with current project"
-                    onChange={handleChange}
                 />
                 </div>
                 <div>
