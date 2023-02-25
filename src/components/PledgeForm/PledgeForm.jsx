@@ -4,8 +4,7 @@ import { useNavigate, useParams, useOutletContext } from "react-router-dom";
 function PledgeForm(props) {
 
     const {project} = props
-console.log(project)
-
+// console.log(project)
     const authToken = window.localStorage.getItem("token")
     const [loggedIn] = useOutletContext();
     const [pledges, setPledges] = useState({
@@ -103,15 +102,6 @@ console.log(project)
                     onChange={handleChange} 
                 />
                 </div>
-                {/* <div>
-                <label htmlFor="supporter_private">Username:</label>
-                <input
-                    type="text"
-                    id="supporter_private"
-                    placeholder="needs to be auto-filled with logged in username"
-                    onChange={handleChange}
-                />
-                </div> */}
                 <button type="submit">Pledge</button>
             </form>
             </div> 
