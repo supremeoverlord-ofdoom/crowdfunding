@@ -67,8 +67,8 @@ console.log(project)
                 alert(`Error: ${err.message}`);
             }
         } else {
-        // redirect to login page
-        navigate(`/login`);
+        // redirect to home page
+        navigate(`/`);
         }
     };
 
