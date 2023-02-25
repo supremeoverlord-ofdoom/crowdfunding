@@ -16,6 +16,7 @@ function Nav(props) {
                 </div>
             </div>
             {loggedIn && <button onClick={handleClick}>Sign Out</button>}
+            {loggedIn && <Link to="/projects" className="btn">Create Project</Link>}
         </nav>
     );
 }
