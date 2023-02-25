@@ -65,10 +65,11 @@ function PledgeForm(props) {
                 console.error(err);
                 alert(`Error: ${err.message}`);
             }
-        } else {
-        // redirect to home page
-        navigate(`/`);
         }
+        // } else {
+        // // redirect to home page
+        // navigate(`/`);
+        // }
     };
 
     return (
