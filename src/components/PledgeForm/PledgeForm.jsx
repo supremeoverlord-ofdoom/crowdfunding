@@ -14,7 +14,7 @@ console.log(project)
         "amount": null,
         "comment": "",
         "anonymous": false,
-        "supporter_private": null,       
+        // "supporter_private": null,       
     });
 
     // enables redirect
@@ -55,7 +55,7 @@ console.log(project)
                     "Content-Type": "application/json",
                     "Authorization": `Token ${authToken}`,
                 },
-                body: JSON.stringify({...pledges, project: project.id}), //put in same thing for usupporter_id in here
+                body: JSON.stringify({...pledges, project: project.id}), //put in same thing for supporter_private (id) in here
                 }
                 );
                 if (!response.ok) {
@@ -103,7 +103,7 @@ console.log(project)
                     onChange={handleChange} 
                 />
                 </div>
-                <div>
+                {/* <div>
                 <label htmlFor="supporter_private">Username:</label>
                 <input
                     type="text"
@@ -111,7 +111,7 @@ console.log(project)
                     placeholder="needs to be auto-filled with logged in username"
                     onChange={handleChange}
                 />
-                </div>
+                </div> */}
                 <button type="submit">Pledge</button>
             </form>
             </div> 
