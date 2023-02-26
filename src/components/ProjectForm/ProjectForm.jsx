@@ -60,7 +60,7 @@ function ProjectForm() {
                 if (!response.ok) {
                     throw new Error(await response.text());
                 }
-                location.reload();
+                window.location.reload();
             } catch (err) {
                 console.error(err);
                 alert(`Error: ${err.message}`);

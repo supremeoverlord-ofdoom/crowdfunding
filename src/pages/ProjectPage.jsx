@@ -28,7 +28,7 @@ function ProjectPage() {
             }
         };
         fetchProject();
-}, []);
+    }, [id]);
 
     //formatting the dates
     const formattedDate = project.date_created
