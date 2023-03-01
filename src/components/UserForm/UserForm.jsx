@@ -54,7 +54,7 @@ function UserForm() {
     return (
             <form onSubmit={handleSubmit}>
                 <div>
-                <label htmlFor="email">E:</label>
+                <label htmlFor="email">Email:</label>
                 <input
                     type="email"
                     id="email"
