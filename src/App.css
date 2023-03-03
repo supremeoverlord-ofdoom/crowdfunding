@@ -1,6 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cabin&family=DotGothic16&family=Oleo+Script+Swash+Caps:wght@700&family=Space+Mono&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cabin", sans-serif;
+  font-size: 16px;
+  color: #000;
+  /* cursor: url("images/pedro-gnascal.png"), auto; */
+  /* cursor: url("https://64.media.tumblr.com/bb3458eebc7a84ff744a190230810678/02abc6154633dcb5-a3/s64x64u_c1/2817fcbfbaa6473f612023cd360ed3755666734a.pnj"),
+    auto; */
+  /* cursor: url("https://bgtscc.net/download/file.php?avatar=16960_1566623298.gif"),
+    auto; */
+  cursor: url("https://www.dragonsfoot.org/forums/download/file.php?avatar=2254_1241646929.gif"),
+    auto;
+}
+
+/* Layout: scrolling and centred */
+html {
+  scroll-behavior: smooth;
+}
+#page-container {
+  /* max-width: 960px; */
+  margin: 0 auto;
+  /* padding: 50px 20px; */
+}
+
+/* First page in the scroll */
+#intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #8ae3af;
+  color: #fff;
+}
+
+h1 {
+  font-family: "Bungee Shade", sans-serif;
+  text-decoration: none;
+  font-size: 7rem;
+  margin-bottom: 34px;
+  animation: spin 2s linear 1; /* changed from infinite  although it would have been funny*/
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+h2 {
+  font-family: "Space Mono", sans-serif;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+h3 {
+  font-family: "Space Mono", sans-serif;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+#projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  background-color: #e38abe;
+  color: #fff;
+}
+
+#projects-section h4 {
+  font-family: "Space Mono", sans-serif;
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-size: 40px;
+}
+
 #project-list {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 80%;
+  /* max-width: 800px; */
+}
+@media screen and (max-width: 600px) {
+  #project-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Project card layout */
+#project-list a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  margin: 5%;
+}
+
+#project-list img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#projects-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#project-list h3 {
+  color: black;
+}
+/* #project-list {
+  display: grid;
+  grid-template-columns: 50% 50%;
   column-gap: 10px;
   row-gap: 10px;
-}
+} */
