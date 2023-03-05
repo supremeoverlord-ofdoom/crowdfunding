@@ -57,7 +57,7 @@ function LoginForm() {
             type="text"
             id="username"
             onChange={handleChange}
-            placeholder="Enter username"
+            placeholder="enter username"
           />
         </div>
         <div>
@@ -66,7 +66,7 @@ function LoginForm() {
             type="password"
             id="password"
             onChange={handleChange}
-            placeholder="Password"
+            placeholder="enter password"
           />
         </div>
         <button type="submit">
