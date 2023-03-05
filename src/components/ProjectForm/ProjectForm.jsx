@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, useParams, useOutletContext } from "react-router-dom";
 import moment from "moment"
+import './ProjectForm.css'
 
 function ProjectForm() {
     // const { project } = props;
@@ -75,19 +76,20 @@ function ProjectForm() {
         <>
         {loggedIn ? 
             <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} class="create-project">
+            <h1>Gnome My Enemy</h1>
                 <div>
                 <label htmlFor="title">Title:</label>
                 <input
                     type="text"
                     id="title"
-                    placeholder="Enter title"
+                    placeholder="title of project"
                     onChange={handleChange}
                 />
                 </div>
                 <div>
                 <label htmlFor="description">Description:</label>
-                <input
+                <textarea
                     type="text"
                     id="description"
                     placeholder="describe your gnoming project"
@@ -99,7 +101,7 @@ function ProjectForm() {
                 <input
                     type="number"
                     id="goal"
-                    placeholder="the goal number of gnomes you want to crowdfund"
+                    placeholder="number of gnomes"
                     onChange={handleChange}
                 />
                 </div>
@@ -108,10 +110,11 @@ function ProjectForm() {
                 <input 
                     type="text"
                     id="image" 
+                    placeholder="a picture is worth 1000 gnomes"
                     onChange={handleChange} 
                 />
                 </div>
-                <div>
+                <div id="is-open">
                 <label htmlFor="is_open">Open Project:</label>
                 <input 
                     type="checkbox"

@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cabin&family=DotGothic16&family=Oleo+Script+Swash+Caps:wght@700&family=Space+Mono&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cabin", sans-serif;
+  font-size: 16px;
+  color: #000;
+
+  /* cursor: url("images/pedro-gnascal.png"), auto; */
+  /* cursor: url("https://64.media.tumblr.com/bb3458eebc7a84ff744a190230810678/02abc6154633dcb5-a3/s64x64u_c1/2817fcbfbaa6473f612023cd360ed3755666734a.pnj"),
+    auto; */
+  /* cursor: url("https://bgtscc.net/download/file.php?avatar=16960_1566623298.gif"),
+    auto; */
+  /* cursor: url("https://www.dragonsfoot.org/forums/download/file.php?avatar=2254_1241646929.gif"),
+    auto; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.create-project {
+  scroll-behavior: smooth;
+  height: auto;
+}
+
+.create-project h1 {
+  color: #e38abe;
+  font-size: 5rem;
+  animation: none;
+  margin-top: 5%;
+  /* padding-bottom: 4%; */
+  /* margin-top: 0%; */
+}
+
+.create-project h2 {
+  color: #e38abe;
+  font-size: 2rem;
+  animation: none;
+  padding-bottom: 2%;
+  margin-top: initial;
+}
+/* .create-project div {
+  min-width: 40%;
+} */
+
+.create-project label {
+  font-family: "Space Mono", sans-serif;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 18px;
+  margin: 2%;
+}
+
+.create-project button {
+  font-family: "Space Mono", sans-serif;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.create-project input {
+  font-family: "DotGothic16", sans-serif;
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  padding: 2%;
+  border: 2px solid #ccc;
+  background-color: white;
+  border-radius: 4px;
+  width: 100%;
+  /* min-width: 100%; */
+  /* max-width: 320px; */
+  margin-top: 2%;
+  /* color: white; */
+}
+
+.create-project input:focus {
+  outline: none !important;
+  border: 1px solid #e38abe;
+  box-shadow: 0 0 10px #e38abe;
+}
+
+.create-project button[type="submit"] {
+  background-color: #f2c14e;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 1%;
+  margin-bottom: 10%;
+}
+
+.create-project button[type="submit"]:hover {
+  background-color: #c46da0;
+  /* color: #E38ABE; */
+}
+
+.create-project input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  background-color: #f2c14e;
+  color: #f2c14e;
+}
+
+.create-project #description {
+  /* width: 700px; */
+  height: 400px;
+  font-family: "DotGothic16", sans-serif;
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  padding: 2%;
+  /* border: 2px solid #ccc; */
+  background-color: white;
+  border-radius: 4px;
+  width: 100%;
+  /* max-width: 320px; */
+  margin-top: 2%;
+  /* color: white; */
+}
+
+.create-project #image {
+  width: 400px;
+  margin-left: 10%;
+}
+/* #is-open {
+    width:fit-content;
+} */
