@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, useParams, useOutletContext } from "react-router-dom";
+import './PledgeForm.css'
 
 function PledgeForm(props) {
 
@@ -76,7 +77,9 @@ function PledgeForm(props) {
         <>
         {loggedIn?
             <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} class="pledge-form">
+            <h3>Like this Project?</h3>
+            <h4>Pledge Your Gnomes Here</h4>
                 <div>
                 <label htmlFor="amount">Amount:</label>
                 <input

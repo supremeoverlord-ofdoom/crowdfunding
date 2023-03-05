@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"; 
-
+import './ProjectPage.css'
 //components
 import PledgeForm from "../components/PledgeForm/PledgeForm";
 
@@ -47,16 +47,16 @@ function ProjectPage() {
     return (
         <div className="project-detail">
         <h2>{project.title}</h2>
-        <h3>Project created on: {formattedDate} - {formattedDateGnomeEra}</h3>
-
-        <h3>{`Total gnomes pledged: ${project.total}`}</h3>
-        <h3>{`Open to new pledges: ${project.is_open}`}</h3>
-        <h3>Project Description</h3>
+        <h5>Project created on: {formattedDate} - {formattedDateGnomeEra}</h5>
+        <h5>{`Goal: ${project.goal} Gnomes`}</h5>
+        <h5>{`Total Gnomes Pledged: ${project.total}`}</h5>
+        <h5>{`Open To New Pledges: ${project.is_open}`}</h5>
+        <h5>Project Description</h5>
         <p>{project.description}</p>
         <div>
             <img src={project.image} />
         </div>
-        <h3>Pledges:</h3>
+        <h2>Pledges:</h2>
         <ul>
             {project.pledges.map((pledgeData, key) => {
             return (
@@ -66,7 +66,7 @@ function ProjectPage() {
                 );
             })}
         </ul>
-    <PledgeForm project={project} /> 
+    <PledgeForm project={project}/> 
                 </div>
     
             );

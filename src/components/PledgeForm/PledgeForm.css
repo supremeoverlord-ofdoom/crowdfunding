@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cabin&family=DotGothic16&family=Oleo+Script+Swash+Caps:wght@700&family=Space+Mono:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cabin", sans-serif;
+  font-size: 16px;
+  color: #000;
+
+  /* cursor: url("images/pedro-gnascal.png"), auto; */
+  /* cursor: url("https://64.media.tumblr.com/bb3458eebc7a84ff744a190230810678/02abc6154633dcb5-a3/s64x64u_c1/2817fcbfbaa6473f612023cd360ed3755666734a.pnj"),
+    auto; */
+  /* cursor: url("https://bgtscc.net/download/file.php?avatar=16960_1566623298.gif"),
+    auto; */
+  /* cursor: url("https://www.dragonsfoot.org/forums/download/file.php?avatar=2254_1241646929.gif"),
+    auto; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.pledge-form {
+  background-color: #8ae3af;
+  height: 500px;
+}
+.pledge-form h3 {
+  color: white;
+  font-size: 2rem;
+  animation: none;
+  /* padding-bottom: 2%; */
+  margin-top: initial;
+  margin-bottom: 1px;
+}
+
+.pledge-form h4 {
+  font-family: "Space Mono", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  animation: none;
+  padding-bottom: 2%;
+  margin-top: initial;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.pledge-form label {
+  font-family: "Space Mono", sans-serif;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 18px;
+  margin: 2%;
+  color: white;
+  font-weight: 700;
+}
+
+.pledge-form button {
+  font-family: "Space Mono", sans-serif;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.pledge-form input {
+  font-family: "DotGothic16", sans-serif;
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 2px solid #ccc;
+  background-color: white;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 320px;
+  margin-top: 4%;
+  /* color: white; */
+}
+.pledge-form input:focus {
+  outline: none !important;
+  border: 1px solid #73c59b;
+  box-shadow: 0 0 10px #73c59b;
+}
+
+.pledge-form button[type="submit"] {
+  background-color: #f2c14e;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 4%;
+}
+
+.pledge-form button[type="submit"]:hover {
+  background-color: #e38abe;
+  /* color: #E38ABE; */
+}
