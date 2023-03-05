@@ -75,7 +75,7 @@ form {
   font-family: "Space Mono", sans-serif;
   text-decoration: none;
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 20px;
   margin: 2%;
   color: white;
   font-weight: 700;
@@ -85,7 +85,7 @@ form {
   font-family: "Space Mono", sans-serif;
   text-decoration: none;
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -93,7 +93,7 @@ form {
   font-family: "DotGothic16", sans-serif;
   text-decoration: none;
   letter-spacing: 5px;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 16px;
   padding: 8px;
   border: 2px solid #ccc;
