@@ -6,6 +6,7 @@ import LoginPage from "./pages/LoginPage";
 import ProjectPage from "./pages/ProjectPage";
 import CreateProjectPage from "./pages/CreateProjectPage";
 import CreateUserPage from "./pages/CreateUserPage";
+import AllProjectsPage from "./pages/AllProjectsPage";
 // Components
 import Nav from "./components/Nav/Nav";
 
@@ -31,8 +32,9 @@ const router = createBrowserRouter([
       { path: "/", element: <HomePage /> },
       {path: "/login", element: <LoginPage /> },
       { path: "/project/:id", element: <ProjectPage /> },
-      { path: "/projects", element: <CreateProjectPage /> },
+      { path: "/create-project", element: <CreateProjectPage /> },
       { path: "/users", element: <CreateUserPage /> },
+      { path: "/projects", element: <AllProjectsPage /> },
     ],
   },
 ]);
