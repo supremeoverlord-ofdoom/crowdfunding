@@ -27,17 +27,17 @@ form {
   background-color: #8ae3af;
 }
 .create-account h1 {
-    color: white;
-    font-size: 5rem;
-    animation: none;
-    padding-bottom: 5%;
-    margin-top: 0%;
+  color: white;
+  font-size: 5rem;
+  animation: none;
+  padding-bottom: 2%;
+  margin-top: initial;
 }
 .create-account .snake-border {
   position: relative;
   width: auto;
   height: auto;
-  padding: 4%;
+  padding: 3%;
 }
 
 .create-account .snake-border .border-piece {
@@ -118,7 +118,7 @@ form {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
-  margin-top: 6%;
+  margin-top: 4%;
 }
 
 .create-account button[type="submit"]:hover {
