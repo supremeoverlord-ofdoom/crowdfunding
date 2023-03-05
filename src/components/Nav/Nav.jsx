@@ -12,11 +12,11 @@ function Nav(props) {
             <div id="nav-right">
                 {!loggedIn && <Link to="/login" className="btn">Login</Link>}
                 {!loggedIn && <Link to="/users" className="btn">Create Account</Link>}
+                {loggedIn && <button onClick={handleClick} className="btn">Sign Out</button>}
+            {loggedIn && <Link to="/projects" className="btn">Create Project</Link>}
                 <div id="nav-controls">
                     <Link to="/" >Home</Link>
                 </div>
-                {loggedIn && <button onClick={handleClick} className="btn">Sign Out</button>}
-            {loggedIn && <Link to="/projects" className="btn">Create Project</Link>}
             </div>
         </nav>
     );
