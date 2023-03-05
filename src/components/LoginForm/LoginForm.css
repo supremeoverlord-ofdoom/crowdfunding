@@ -28,7 +28,7 @@ form {
   position: relative;
   width: auto;
   height: auto;
-  padding: 2%;
+  padding: 3%;
 }
 
 .login .snake-border .border-piece {
@@ -37,10 +37,11 @@ form {
   left: 0;
   width: 0;
   height: 0;
-  border: 2px solid #e38abe;
+  border: 5px solid white;
   border-radius: 50%;
   animation: snake-border 1.5s ease-in forwards;
   pointer-events: none;
+  box-shadow: 0 0 7px #e38abe;
 }
 
 @keyframes snake-border {
