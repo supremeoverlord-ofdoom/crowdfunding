@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cabin&family=DotGothic16&family=Oleo+Script+Swash+Caps:wght@700&family=Space+Mono:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cabin", sans-serif;
+  font-size: 16px;
+  color: #000;
+
+  /* cursor: url("images/pedro-gnascal.png"), auto; */
+  /* cursor: url("https://64.media.tumblr.com/bb3458eebc7a84ff744a190230810678/02abc6154633dcb5-a3/s64x64u_c1/2817fcbfbaa6473f612023cd360ed3755666734a.pnj"),
+    auto; */
+  /* cursor: url("https://bgtscc.net/download/file.php?avatar=16960_1566623298.gif"),
+    auto; */
+  /* cursor: url("https://www.dragonsfoot.org/forums/download/file.php?avatar=2254_1241646929.gif"),
+    auto; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.create-account {
+  background-color: #8ae3af;
+}
+.create-account h1 {
+    color: white;
+    font-size: 5rem;
+    animation: none;
+    padding-bottom: 5%;
+    margin-top: 0%;
+}
+.create-account .snake-border {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 4%;
+}
+
+.create-account .snake-border .border-piece {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 4px solid white;
+  border-radius: 50%;
+  animation: snake-border 1.5s ease-in forwards;
+  pointer-events: none;
+  box-shadow: 0 0 5px #73c59b;
+}
+
+@keyframes snake-border {
+  0% {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+
+.create-account label {
+  font-family: "Space Mono", sans-serif;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 24px;
+  margin: 2%;
+  color: white;
+  font-weight: 700;
+}
+
+.create-account button {
+  font-family: "Space Mono", sans-serif;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.create-account input {
+  font-family: "DotGothic16", sans-serif;
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-size: 24px;
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 2px solid #ccc;
+  background-color: white;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 320px;
+  margin-top: 4%;
+  /* color: white; */
+}
+.create-account input:focus {
+  outline: none !important;
+  border: 1px solid #73c59b;
+  box-shadow: 0 0 10px #73c59b;
+}
+
+.create-account button[type="submit"] {
+  background-color: #f2c14e;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 6%;
+}
+
+.create-account button[type="submit"]:hover {
+  background-color: #e38abe;
+  /* color: #E38ABE; */
+}

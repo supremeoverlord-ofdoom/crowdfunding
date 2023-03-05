@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, useParams, useOutletContext } from "react-router-dom";
+import './UserForm.css'
 
 function UserForm() {
     // const { user } = props;
@@ -52,9 +53,15 @@ function UserForm() {
     };
 
     return (
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} class="create-account">
+            <h1>Gnome My Enemy</h1>
+            <div className="snake-border">
+            <div className="border-piece top"></div>
+            <div className="border-piece right"></div>
+            <div className="border-piece bottom"></div>
+            <div className="border-piece left"></div>
                 <div>
-                <label htmlFor="email">Email:</label>
+                <label htmlFor="email">Email</label>
                 <input
                     type="email"
                     id="email"
@@ -63,24 +70,25 @@ function UserForm() {
                 />
                 </div>
                 <div>
-                <label htmlFor="username">Username:</label>
+                <label htmlFor="username">Username</label>
                 <input
                     type="text"
                     id="username"
-                    placeholder="Create a username"
+                    placeholder="choose a username"
                     onChange={handleChange}
                 />
                 </div>
                 <div>
-                <label htmlFor="password">Password:</label>
+                <label htmlFor="password">Password</label>
                 <input
                     type="password"
                     id="password"
-                    placeholder="create a secure password"
+                    placeholder="choose a password"
                     onChange={handleChange}
                 />
                 </div>
-                <button type="submit">Create user</button>
+                <button type="submit">Create Account</button>
+                </div>
             </form>
 
     );
