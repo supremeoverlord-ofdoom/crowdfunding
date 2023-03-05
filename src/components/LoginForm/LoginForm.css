@@ -6,6 +6,7 @@ body {
   font-family: "Cabin", sans-serif;
   font-size: 16px;
   color: #000;
+
   /* cursor: url("images/pedro-gnascal.png"), auto; */
   /* cursor: url("https://64.media.tumblr.com/bb3458eebc7a84ff744a190230810678/02abc6154633dcb5-a3/s64x64u_c1/2817fcbfbaa6473f612023cd360ed3755666734a.pnj"),
     auto; */
@@ -23,22 +24,60 @@ form {
   height: 100vh;
 }
 
-label {
+.login .snake-border {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 2%;
+}
+
+.login .snake-border .border-piece {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 2px solid #e38abe;
+  border-radius: 50%;
+  animation: snake-border 1.5s ease-in forwards;
+  pointer-events: none;
+}
+
+@keyframes snake-border {
+  0% {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+
+.login label {
   font-family: "Space Mono", sans-serif;
   text-decoration: none;
   letter-spacing: 2px;
   font-size: 24px;
-  margin:2%;
+  margin: 2%;
 }
 
-button {
+.login button {
   font-family: "Space Mono", sans-serif;
   text-decoration: none;
   letter-spacing: 2px;
   font-size: 24px;
+  cursor: pointer;
 }
 
-input {
+.login input {
   font-family: "DotGothic16", sans-serif;
   text-decoration: none;
   letter-spacing: 5px;
@@ -46,32 +85,31 @@ input {
   margin-bottom: 16px;
   padding: 8px;
   /* border: 2px solid #ccc; */
-  background-color: #F2C14E;
+  background-color: #f2c14e;
   border-radius: 4px;
   width: 100%;
   max-width: 320px;
   margin-top: 2%;
   /* color: white; */
 }
-input:focus {
+.login input:focus {
   outline: none !important;
-  border:1px solid #E38ABE;
-  box-shadow: 0 0 10px #E38ABE;
+  border: 1px solid #e38abe;
+  box-shadow: 0 0 10px #e38abe;
 }
 
-
-button[type="submit"] {
+.login button[type="submit"] {
   background-color: #e38abe;
   color: #fff;
   padding: 8px 16px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
   margin-top: 1%;
 }
 
-button[type="submit"]:hover {
+.login button[type="submit"]:hover {
   background-color: #c46da0;
   /* color: #E38ABE; */
 }

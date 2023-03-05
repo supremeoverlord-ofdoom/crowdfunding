@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useOutletContext } from "react-router-dom";
 import './LoginForm.css'
 
@@ -49,33 +49,53 @@ function LoginForm() {
         }
       };
 
-    return (
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="username">Username:</label>
-          <input
-            type="text"
-            id="username"
-            onChange={handleChange}
-            placeholder="enter username"
-          />
-        </div>
-        <div>
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            onChange={handleChange}
-            placeholder="enter password"
-          />
-        </div>
-        <button type="submit">
-          Login
-        </button>
-      </form>
-    );
-  }
-  
-  export default LoginForm;
+      useEffect(() => {
+        const loginButton = document.querySelector("#login-button");
+        const snakeBorder = document.querySelector(".snake-border");
+    
+        const handleClick = () => {
+          snakeBorder.classList.add("break-apart");
+        };
+    
+        loginButton.addEventListener("click", handleClick);
+    
+        return () => {
+          loginButton.removeEventListener("click", handleClick);
+        };
+      }, []);
 
+      return (
+        <form onSubmit={handleSubmit} class="login">
+          <div className="snake-border">
+            <div className="border-piece top"></div>
+            <div className="border-piece right"></div>
+            <div className="border-piece bottom"></div>
+            <div className="border-piece left"></div>
+            <div>
+              <label htmlFor="username">Username:</label>
+              <input
+                type="text"
+                id="username"
+                onChange={handleChange}
+                placeholder="enter username"
+              />
+            </div>
+            <div>
+              <label htmlFor="password">Password:</label>
+              <input
+                type="password"
+                id="password"
+                onChange={handleChange}
+                placeholder="enter password"
+              />
+            </div>
+            <button id="login-button" type="submit">
+              Login
+            </button>
+          </div>
+        </form>
+      );
+    }
+    
+    export default LoginForm;
   
