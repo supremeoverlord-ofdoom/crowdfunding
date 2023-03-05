@@ -66,6 +66,7 @@ function LoginForm() {
 
       return (
         <form onSubmit={handleSubmit} class="login">
+        <h1>Gnome My Enemy</h1>
           <div className="snake-border">
             <div className="border-piece top"></div>
             <div className="border-piece right"></div>

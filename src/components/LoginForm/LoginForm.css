@@ -23,7 +23,13 @@ form {
   justify-content: center;
   height: 100vh;
 }
-
+.login h1 {
+  color: #e38abe;
+  font-size: 5rem;
+  animation: none;
+  padding-bottom: 8%;
+  margin-top: 0%;
+}
 .login .snake-border {
   position: relative;
   width: auto;
