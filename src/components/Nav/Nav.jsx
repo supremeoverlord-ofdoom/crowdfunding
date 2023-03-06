@@ -28,11 +28,11 @@ function Nav(props) {
           <span></span>
           <span></span>
           <ul id="menu">
-            <Link to="/"><li>Home</li></Link>
-            <Link to="/projects"><li>Explore Projects</li></Link>
-            {!loggedIn && <Link to="/login"><li>Login</li></Link>}
-            {!loggedIn && <Link to="/users"><li>Create Account</li></Link>}
-            {loggedIn && <Link to="/create-project"><li>Create Project</li></Link>}
+            <a onClick={() => {window.location.href="/"}}><li>Home</li></a>
+            <a onClick={() => {window.location.href="/projects"}}><li>Explore Projects</li></a>
+            {!loggedIn &&<a onClick={() => {window.location.href="/login"}}><li>Login</li></a>}
+            {!loggedIn &&<a onClick={() => {window.location.href="/users"}}><li>Create Account</li></a>}
+            {loggedIn &&<a onClick={() => {window.location.href="/create-project"}}><li>Create Project</li></a>}
             {loggedIn && <button onClick={handleClick} className="btn">Sign Out</button>}
           </ul>
         </div>
