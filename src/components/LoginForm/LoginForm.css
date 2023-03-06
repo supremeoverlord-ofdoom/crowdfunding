@@ -1,20 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cabin&family=DotGothic16&family=Oleo+Script+Swash+Caps:wght@700&family=Space+Mono&display=swap");
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Cabin", sans-serif;
-  font-size: 16px;
-  color: #000;
-
-  /* cursor: url("images/pedro-gnascal.png"), auto; */
-  /* cursor: url("https://64.media.tumblr.com/bb3458eebc7a84ff744a190230810678/02abc6154633dcb5-a3/s64x64u_c1/2817fcbfbaa6473f612023cd360ed3755666734a.pnj"),
-    auto; */
-  /* cursor: url("https://bgtscc.net/download/file.php?avatar=16960_1566623298.gif"),
-    auto; */
-  /* cursor: url("https://www.dragonsfoot.org/forums/download/file.php?avatar=2254_1241646929.gif"),
-    auto; */
-}
 
 form {
   display: flex;
