@@ -102,3 +102,43 @@ form {
   background-color: #e38abe;
   /* color: #E38ABE; */
 }
+
+@media screen and (max-width: 600px) {
+
+    .pledge-form h3 {
+        font-size: 1.5rem;
+        margin-left: 2%;
+        margin-top: 2%;
+      }
+    
+    .pledge-form h4 {
+        font-size: 1rem;
+        margin-left: 2%;
+        margin-top: 2%;
+      }
+  
+    .pledge-form label {
+      font-size: 16px;
+      margin-left: 2%;
+    }
+  
+  .pledge-form input {
+      width: 90%;
+      margin-left: 2%;
+      font-size: 16px;
+  }
+  
+  .pledge-form button {
+    margin-left: 2%;
+  }
+  
+  .pledge-form .snake-border {
+      width: 80%;
+  }
+
+  /* .pledge-form .form-field-container {
+    width: 80%;
+    margin-right:0px;
+  } */
+  
+  }
