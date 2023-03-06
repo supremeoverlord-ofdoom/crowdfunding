@@ -125,3 +125,37 @@ form {
   background-color: #e38abe;
   /* color: #E38ABE; */
 }
+
+
+@media screen and (max-width: 600px) {
+    .create-account h1 {
+      font-size: 4rem;
+      margin-left: 2%;
+      margin-top: 2%;
+    }
+  
+    .create-account label {
+      font-size: 16px;
+      margin-left: 2%;
+    }
+  
+  .create-account input {
+      width: 90%;
+      margin-left: 2%;
+      font-size: 16px;
+  }
+  
+  .create-account button {
+    margin-left: 2%;
+  }
+  
+  .create-account .snake-border {
+      width: 80%;
+  }
+
+  /* .create-account .form-field-container {
+    width: 80%;
+    margin-right:0px;
+  } */
+  
+  }
