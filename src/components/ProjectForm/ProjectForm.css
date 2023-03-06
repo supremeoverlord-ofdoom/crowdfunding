@@ -136,3 +136,39 @@ form {
 /* #is-open {
     width:fit-content;
 } */
+
+/*media queries - mobile display designed for project form*/
+
+@media screen and (max-width: 600px) {
+    .create-project h1 {
+      font-size: 4rem;
+      margin-left: 2%;
+      margin-top: 2%;
+    }
+    .create-project h2 {
+      font-size: 25px;
+      margin-left: 2%;
+      }
+    
+      .create-project label {
+        font-size: 16px;
+      }
+    
+    .create-project input {
+        width:auto;
+    }
+
+    .create-project #image {
+        width: 250px;
+        /* margin-left: 10%; */
+    }
+
+    .create-project #title {
+        width: 90%;
+    }
+
+    .create-project #description {
+        margin-left: 2%;
+        width: 90%;
+    }
+}
