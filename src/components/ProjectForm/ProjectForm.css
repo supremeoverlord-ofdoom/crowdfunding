@@ -114,6 +114,12 @@ form {
   /* color: white; */
 }
 
+.create-project #description:focus {
+  outline: none !important;
+  border: 1px solid #e38abe;
+  box-shadow: 0 0 10px #e38abe;
+}
+
 .create-project #image {
   width: 400px;
   margin-left: 10%;
