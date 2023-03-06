@@ -20,6 +20,15 @@ function Nav(props) {
                 <div id="nav-controls">
                     <Link to="/" >Home</Link>
                 </div>
+                <div class="nav-button-socials">
+          <a href="https://www.instagram.com/p/CAVcrA7nwUr/?utm_source=ig_web_copy_link">
+            <img
+              class="icon"
+              src="src/images/instagram-48.png"
+              alt="Instagram"
+            />
+          </a>
+        </div>
             </div>
       <div class="small-nav" role="navigation">
         <div id="menuToggle">
