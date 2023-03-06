@@ -72,7 +72,7 @@ function LoginForm() {
             <div className="border-piece right"></div>
             <div className="border-piece bottom"></div>
             <div className="border-piece left"></div>
-            <div>
+            <div class="form-field-container">
               <label htmlFor="username">Username:</label>
               <input
                 type="text"
@@ -81,7 +81,7 @@ function LoginForm() {
                 placeholder="enter username"
               />
             </div>
-            <div>
+            <div class="form-field-container">
               <label htmlFor="password">Password:</label>
               <input
                 type="password"
